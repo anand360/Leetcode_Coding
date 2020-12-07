@@ -153,39 +153,131 @@ namespace Coding
             // var a = new MatrixDiagonalsDec(g);
             // var b = a.Run();
 
-            var a  = new LinkedHashMap<string>();
-            a.Enqueue(new QueueItem<string>(2, "Anand2"));
-            a.Enqueue(new QueueItem<string>(3, "Anand3"));
-            a.Enqueue(new QueueItem<string>(1, "Anand1"));
-            a.Enqueue(new QueueItem<string>(4, "Anand4"));
+            // var a  = new LinkedHashMap<string>();
+            // a.Enqueue(new QueueItem<string>(2, "Anand2"));
+            // a.Enqueue(new QueueItem<string>(3, "Anand3"));
+            // a.Enqueue(new QueueItem<string>(1, "Anand1"));
+            // a.Enqueue(new QueueItem<string>(4, "Anand4"));
 
-            var p = a.Peek();
-            System.Console.WriteLine($"{p.Id} | {p.Value}");
+            // var p = a.Peek();
+            // System.Console.WriteLine($"{p.Id} | {p.Value}");
 
-            var d = a.Dequeue();
-            System.Console.WriteLine($"{d.Id} | {d.Value}");
+            // var d = a.Dequeue();
+            // System.Console.WriteLine($"{d.Id} | {d.Value}");
 
-            p = a.Peek();
-            System.Console.WriteLine($"{p.Id} | {p.Value}");
+            // p = a.Peek();
+            // System.Console.WriteLine($"{p.Id} | {p.Value}");
             
-            a.Enqueue(new QueueItem<string>(1, "Anand1New"));
+            // a.Enqueue(new QueueItem<string>(1, "Anand1New"));
 
-            p = a.Peek();
-            System.Console.WriteLine($"{p.Id} | {p.Value}");
+            // p = a.Peek();
+            // System.Console.WriteLine($"{p.Id} | {p.Value}");
 
-            a.ForceEnqueue(new QueueItem<string>(1, "Anand1New"));
+            // a.ForceEnqueue(new QueueItem<string>(1, "Anand1New"));
 
-            p = a.Peek();
-            System.Console.WriteLine($"{p.Id} | {p.Value}");
+            // p = a.Peek();
+            // System.Console.WriteLine($"{p.Id} | {p.Value}");
 
-            d = a.Dequeue();
-            System.Console.WriteLine($"{d.Id} | {d.Value}");
+            // d = a.Dequeue();
+            // System.Console.WriteLine($"{d.Id} | {d.Value}");
 
-            d = a.Dequeue();
-            System.Console.WriteLine($"{d.Id} | {d.Value}");
+            // d = a.Dequeue();
+            // System.Console.WriteLine($"{d.Id} | {d.Value}");
 
-            d = a.Dequeue();
-            System.Console.WriteLine($"{d.Id} | {d.Value}");
+            // d = a.Dequeue();
+            // System.Console.WriteLine($"{d.Id} | {d.Value}");
+
+            // var root = new TreeNode("5");
+            // root.left = new TreeNode("4");
+            // root.right = new TreeNode("8");
+            // root.left.left = new TreeNode("3");
+            // root.right.left = new TreeNode("10");
+            // root.right.right = new TreeNode("45");
+
+            // MorrisInorderRT.Run(root);
+
+            // var d = new List<int>{
+            //     5,
+            //     122340,
+            //     29
+            // };
+
+            // System.Console.WriteLine(CheckValidDate.Run(d));
+
+            // var a = Mural.Run(new int[]{1,0,2,9,3,8,4,7,5,6});
+
+            // var a = new List<string>{"eat", "tea", "ate", "tab", "","bat", "cab","eta"};
+            // var output = GroupAnagram.Run(a);
+            // foreach (var item in output)
+            // {
+            //     foreach (var val in item)
+            //     {
+            //         System.Console.Write(val);
+            //         System.Console.Write(",");
+            //     }
+
+            //     System.Console.WriteLine();
+            // }
+
+            // var a = new TreeNode("2");
+            // a.left = new TreeNode("1");
+            // a.right = new TreeNode("3");
+
+            // var ser = SerDelBSTnBT.Serialize(a);
+            // System.Console.WriteLine(ser);
+
+            // var res = SerDelBSTnBT.Deserialize(ser);
+
+            // System.Console.WriteLine(SerDelBSTnBT.Serialize(res));
+
+            // var root = new NAryTreeNode(1);
+            // root.Children.Add(new NAryTreeNode(4));
+            // root.Children[0].Children.Add(new NAryTreeNode(10));
+            // root.Children.Add(new NAryTreeNode(5));
+            // root.Children.Add(new NAryTreeNode(6));
+            // root.Children.Add(new NAryTreeNode(7));
+
+            // var res = SelDelNAry.Serialize(root);
+            // System.Console.WriteLine(res);
+
+            // var nodes = SelDelNAry.Deserialize(res);
+            // System.Console.WriteLine(SelDelNAry.Serialize(nodes));
+
+            // NQueen.SolveNQueen(4);
+
+            // int[,] g = { 
+            //     { 20, 8, 4, 2 }, 
+            //     { 15, 5, 3, 3 }, 
+            //     { 8, 1, 5, 2 }, 
+            //     { 1, 2, 0, 1 } 
+            //     }; 
+
+            // int[,] k = {
+            //         {4, 2},
+            //         {3, 1}
+            //     };
+
+            // int[,] f = {
+            //     { 20, 34, 5, 6},
+            //     { 18, 19, 6, 5},
+            //     { 12, 11, 10, 4},
+            //     { 23, 100, 30, 2}
+            // };
+
+            // var a = TopBottomPathMatrix.Run(f);
+
+            var test = new int[8];
+            for (int i = 1; i <= 1000000; i++)
+            {
+                var num = RandIntFlipCoin.Run(0,7);
+                //System.Console.WriteLine(num);
+                test[num]++;
+            }
+
+            for (int i = 0; i < 8; i++)
+            {
+                System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
+            }
         }
 
         public static void Compress(string str)
