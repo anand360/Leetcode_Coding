@@ -279,15 +279,20 @@ namespace Coding
             //     System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
             // }
 
-            var a = new char[4][];
-            a[0] = new char[5]{ '1', '0', '1', '0', '0' };
-            a[1] = new char[5]{ '1', '0', '1', '1', '1' };
-            a[2] = new char[5]{ '1', '1', '1', '1', '1' };
-            a[3] = new char[5]{ '1', '0', '0', '1', '0' };
+            // var a = new char[4][];
+            // a[0] = new char[5]{ '1', '0', '1', '0', '0' };
+            // a[1] = new char[5]{ '1', '0', '1', '1', '1' };
+            // a[2] = new char[5]{ '1', '1', '1', '1', '1' };
+            // a[3] = new char[5]{ '1', '0', '0', '1', '0' };
 
-            System.Console.WriteLine(MaximalRect.Run(a));
+            // System.Console.WriteLine(MaximalRect.Run(a));
 
-            System.Console.WriteLine(MaximalSquare.Run(a));
+            // System.Console.WriteLine(MaximalSquare.Run(a));
+
+            // System.Console.WriteLine(DecodeWays.Run("226"));
+
+            var a = new List<string>{ "hot","dot","dog","lot","log","cog" };
+            System.Console.WriteLine(WordLadder.Run("hit", "cog", a));
         }
 
         public static void Compress(string str)
