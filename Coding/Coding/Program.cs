@@ -289,10 +289,12 @@ namespace Coding
 
             // System.Console.WriteLine(MaximalSquare.Run(a));
 
-            // System.Console.WriteLine(DecodeWays.Run("226"));
+            // System.Console.WriteLine(DecodeWays.Run("226")); 
 
-            var a = new List<string>{ "hot","dot","dog","lot","log","cog" };
-            System.Console.WriteLine(WordLadder.Run("hit", "cog", a));
+            // var a = new List<string>{ "hot","dot","dog","lot","log","cog" };
+            // System.Console.WriteLine(WordLadder.Run("hit", "cog", a));
+
+            System.Console.WriteLine(DecodeWays2.Run("2*"));
         }
 
         public static void Compress(string str)
