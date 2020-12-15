@@ -294,7 +294,17 @@ namespace Coding
             // var a = new List<string>{ "hot","dot","dog","lot","log","cog" };
             // System.Console.WriteLine(WordLadder.Run("hit", "cog", a));
 
-            System.Console.WriteLine(DecodeWays2.Run("2*"));
+            // System.Console.WriteLine(DecodeWays2.Run("2*"));
+
+            System.Console.WriteLine(BinarySearchable.Run(new int[]{1, 5, -1, 11, 20, 21}));
+
+            //  var a = new char[4][];
+            // a[0] = new char[4]{ 'X', 'X', 'X', 'X' };
+            // a[1] = new char[4]{ 'X', 'O', 'O', 'X' };
+            // a[2] = new char[4]{ 'X', 'X', 'O', 'X' };
+            // a[3] = new char[4]{ 'X', 'O', 'X', 'X' };
+
+            // SurroundedRegions.Run(a);
         }
 
         public static void Compress(string str)
