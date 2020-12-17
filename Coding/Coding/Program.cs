@@ -296,7 +296,7 @@ namespace Coding
 
             // System.Console.WriteLine(DecodeWays2.Run("2*"));
 
-            System.Console.WriteLine(BinarySearchable.Run(new int[]{1, 5, -1, 11, 20, 21}));
+            // System.Console.WriteLine(BinarySearchable.Run(new int[]{1, 5, -1, 11, 20, 21}));
 
             //  var a = new char[4][];
             // a[0] = new char[4]{ 'X', 'X', 'X', 'X' };
@@ -305,6 +305,30 @@ namespace Coding
             // a[3] = new char[4]{ 'X', 'O', 'X', 'X' };
 
             // SurroundedRegions.Run(a);
+
+            // System.Console.WriteLine(LongestBalancedParanthesis.Run("(())(((())()"));
+
+            // System.Console.WriteLine(MaxSumNo2Adjacent.Run(new int[]{-1,2, -3, 5, -10}));
+
+            var ladders = new Dictionary<int,int>{
+                {8,77},
+                {37,94},
+                {58,82},
+                {36,100}
+            };
+            var snakes = new Dictionary<int, int>{
+                {99,12},
+                {87,57},
+                {72,30},
+                {90,43},
+                {53,2},
+                {78,35}
+            };
+            var snl = new SnakeNLadder();
+            snl.Ladderdict = ladders;
+            snl.Snakedict = snakes;
+
+            System.Console.WriteLine(snl.QuickWayUp());
         }
 
         public static void Compress(string str)
