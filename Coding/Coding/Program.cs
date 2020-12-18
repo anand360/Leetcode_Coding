@@ -310,25 +310,32 @@ namespace Coding
 
             // System.Console.WriteLine(MaxSumNo2Adjacent.Run(new int[]{-1,2, -3, 5, -10}));
 
-            var ladders = new Dictionary<int,int>{
-                {8,77},
-                {37,94},
-                {58,82},
-                {36,100}
-            };
-            var snakes = new Dictionary<int, int>{
-                {99,12},
-                {87,57},
-                {72,30},
-                {90,43},
-                {53,2},
-                {78,35}
-            };
-            var snl = new SnakeNLadder();
-            snl.Ladderdict = ladders;
-            snl.Snakedict = snakes;
+            // var ladders = new Dictionary<int,int>{
+            //     {8,77},
+            //     {37,94},
+            //     {58,82},
+            //     {36,100}
+            // };
+            // var snakes = new Dictionary<int, int>{
+            //     {99,12},
+            //     {87,57},
+            //     {72,30},
+            //     {90,43},
+            //     {53,2},
+            //     {78,35}
+            // };
+            // var snl = new SnakeNLadder();
+            // snl.Ladderdict = ladders;
+            // snl.Snakedict = snakes;
 
-            System.Console.WriteLine(snl.QuickWayUp());
+            // System.Console.WriteLine(snl.QuickWayUp());
+
+            var a = new int[3][];
+            a[0] = new int[3]{ 0,1,0 };
+            a[1] = new int[3]{ 0,0,0 };
+            a[2] = new int[3]{ 0,0,1 };
+
+            System.Console.WriteLine(ShortestBridge.Run(a));
         }
 
         public static void Compress(string str)
