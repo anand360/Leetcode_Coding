@@ -33,4 +33,20 @@ public class NAryLevelOrder
 
         return result;
     }
+
+    // DFS
+    private List<List<int>> levelOrder(NAryTreeNode node, int level, List<List<int>> order){
+        if (node == null){
+            return order;
+        }
+        List<int> list = order.Count > level ?  order[level] : new List<int>();
+        list.Add(node.val);
+        if (order.Count <= level){
+            order.Add(list);
+        }
+        foreach(var n in node.Children){
+            levelOrder(n, level + 1, order);
+        }
+        return order;
+    }
 }
