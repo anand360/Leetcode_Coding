@@ -347,7 +347,18 @@ namespace Coding
 
             // System.Console.WriteLine(BrickWall.Run(a));
 
-            System.Console.WriteLine(KnightProbability.Run(3,2,0,0));
+            // System.Console.WriteLine(KnightProbability.Run(3,2,0,0));
+
+            var a = new int[3][];
+            a[0] = new int[]{0,0};
+            a[1] = new int[]{94911151,94911150};
+            a[2] = new int[]{94911152,94911151};
+
+            // a[0] = new int[]{1,1};
+            // a[1] = new int[]{2,2};
+            // a[2] = new int[]{3,3};
+
+            System.Console.WriteLine(StraightLineMaxPoints.Run(a));
         }
 
         public static void Compress(string str)
