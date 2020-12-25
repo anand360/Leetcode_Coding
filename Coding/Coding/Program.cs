@@ -337,15 +337,17 @@ namespace Coding
 
             // System.Console.WriteLine(ShortestBridge.Run(a));
 
-            var a = new int[6][];
-            a[0] = new int[4]{ 1,2,2,1 };
-            a[1] = new int[3]{ 3,1,2 };
-            a[2] = new int[3]{ 1,3,2 };
-            a[3] = new int[2]{ 2,4 };
-            a[4] = new int[3]{ 3,1,2 };
-            a[5] = new int[4]{ 1,3,1,1 };
+            // var a = new int[6][];
+            // a[0] = new int[4]{ 1,2,2,1 };
+            // a[1] = new int[3]{ 3,1,2 };
+            // a[2] = new int[3]{ 1,3,2 };
+            // a[3] = new int[2]{ 2,4 };
+            // a[4] = new int[3]{ 3,1,2 };
+            // a[5] = new int[4]{ 1,3,1,1 };
 
-            System.Console.WriteLine(BrickWall.Run(a));
+            // System.Console.WriteLine(BrickWall.Run(a));
+
+            System.Console.WriteLine(KnightProbability.Run(3,2,0,0));
         }
 
         public static void Compress(string str)
