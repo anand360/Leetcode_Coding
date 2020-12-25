@@ -5,11 +5,6 @@ public class KnightProbability
 {
     public static double Run(int N, int K, int r, int c)
     {
-        if (K == 0)
-        {
-            return 0;
-        }
-
         var dir = new int[,]{
             {-2, -1},
             {-2, 1},
