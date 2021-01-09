@@ -1,4 +1,4 @@
-public class Island{
+public class CountIsland{
     public static int Run(char[][] grid){
         if(grid == null){
             return 0;
