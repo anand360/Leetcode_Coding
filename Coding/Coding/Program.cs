@@ -371,14 +371,24 @@ namespace Coding
 
             // System.Console.WriteLine(WildcardPattern.Comparison("baaabab", "b*b"));
 
-            var text = "Today is an amazing day for cricket, sachin played important role and India won World cup to become 2nd time winner. Cricket is religion and Sachin is considered to be god of cricket in world.";
-            var words = new List<string>{
-                "cricket", 
-                "sachin", 
-                "world", 
-                "winner"
+            // var text = "Today is an amazing day for cricket, sachin played important role and India won World cup to become 2nd time winner. Cricket is religion and Sachin is considered to be god of cricket in world.";
+            // var words = new List<string>{
+            //     "cricket", 
+            //     "sachin", 
+            //     "world", 
+            //     "winner"
+            // };
+            // System.Console.WriteLine(MinimumLengthWindowWords.MinWindowLength(text, words));
+
+            var h =new HashSet<int>{
+                1,2,3
             };
-            System.Console.WriteLine(MinimumLengthWindowWords.MinWindowLength(text, words));
+
+            var v = new HashSet<int>{
+                1,2
+            };
+
+            System.Console.WriteLine(Twilio.PrisonBreak(3, 2, h, v));
         }
 
         public static void Compress(string str)
