@@ -49,6 +49,30 @@ public class Twilio
         return result;
     }
 
+    // public int[] frequencySort(int[] nums) {
+    //     Map<Integer, Integer> freqCount = new HashMap();
+    //     for (int n : nums) {
+    //         freqCount.put(n, freqCount.getOrDefault(n, 0) + 1);
+    //     }
+    //     Comparator<Map.Entry<Integer, Integer>> valueComparator = new Comparator<Map.Entry<Integer, Integer>>() {
+    //         @Override
+    //         public int compare(Map.Entry<Integer, Integer> e1, Map.Entry<Integer, Integer> e2) {
+    //             return e1.getValue() == e2.getValue() ? (e1.getKey() < e2.getKey() ? 1 : -1) : (e1.getValue() < e2.getValue() ? -1 : 1);
+    //         }
+    //     };
+        
+    //     List<Map.Entry<Integer, Integer>> sortedList = new ArrayList<Map.Entry<Integer, Integer>>(freqCount.entrySet());
+    //     Collections.sort(sortedList, valueComparator);
+    //     int[] result = new int[nums.length];
+    //     int i = 0;
+    //     for (Map.Entry<Integer, Integer> e : sortedList) {
+    //         for (int j = 0; j < e.getValue(); ++j) {
+    //             result[i++] = e.getKey();
+    //         }
+    //     }
+    //     return result;
+    // }
+
     // Find the max area when horizontal and vertical bars are removed. 
     public static long PrisonBreak(int n, int m, HashSet<int> h, HashSet<int> v){
         var x = new bool[n+1];
@@ -101,6 +125,6 @@ public class Twilio
             }
         }
 
-        return (maxX+1) * (maxY+1);
+        return (long)(maxX+1) * (maxY+1);
     }
 }

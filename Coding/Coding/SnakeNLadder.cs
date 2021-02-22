@@ -60,8 +60,7 @@ namespace Coding
                     if (Snakedict.ContainsKey(next))
                     {
                         next = Snakedict[next];
-                    }
-                    else if (Ladderdict.ContainsKey(next))
+                    } else if (Ladderdict.ContainsKey(next))
                     {
                         next = Ladderdict[next];
                     }
@@ -70,8 +69,8 @@ namespace Coding
                     {
                         visited.Add(next, visited[el] + 1);
                         queue.Enqueue(next);
-                    }
-                    else if (visited[el] + 1 < visited[next])
+                    } 
+                    else if(visited[el] + 1 < visited[next])
                     {
                         visited[next] = visited[el] + 1;
                     }

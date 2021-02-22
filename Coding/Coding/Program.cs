@@ -266,129 +266,18 @@ namespace Coding
 
             // var a = TopBottomPathMatrix.Run(f);
 
-            // var test = new int[8];
-            // for (int i = 1; i <= 1000000; i++)
-            // {
-            //     var num = RandIntFlipCoin.Run(0,7);
-            //     //System.Console.WriteLine(num);
-            //     test[num]++;
-            // }
+            var test = new int[8];
+            for (int i = 1; i <= 1000000; i++)
+            {
+                var num = RandIntFlipCoin.Run(0,7);
+                //System.Console.WriteLine(num);
+                test[num]++;
+            }
 
-            // for (int i = 0; i < 8; i++)
-            // {
-            //     System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
-            // }
-
-            // var a = new char[4][];
-            // a[0] = new char[5]{ '1', '0', '1', '0', '0' };
-            // a[1] = new char[5]{ '1', '0', '1', '1', '1' };
-            // a[2] = new char[5]{ '1', '1', '1', '1', '1' };
-            // a[3] = new char[5]{ '1', '0', '0', '1', '0' };
-
-            // System.Console.WriteLine(MaximalRect.Run(a));
-
-            // System.Console.WriteLine(MaximalSquare.Run(a));
-
-            // System.Console.WriteLine(DecodeWays.Run("226")); 
-
-            // var a = new List<string>{ "hot","dot","dog","lot","log","cog" };
-            // System.Console.WriteLine(WordLadder.Run("hit", "cog", a));
-
-            // System.Console.WriteLine(DecodeWays2.Run("2*"));
-
-            // System.Console.WriteLine(BinarySearchable.Run(new int[]{1, 5, -1, 11, 20, 21}));
-
-            //  var a = new char[4][];
-            // a[0] = new char[4]{ 'X', 'X', 'X', 'X' };
-            // a[1] = new char[4]{ 'X', 'O', 'O', 'X' };
-            // a[2] = new char[4]{ 'X', 'X', 'O', 'X' };
-            // a[3] = new char[4]{ 'X', 'O', 'X', 'X' };
-
-            // SurroundedRegions.Run(a);
-
-            // System.Console.WriteLine(LongestBalancedParanthesis.Run("(())(((())()"));
-
-            // System.Console.WriteLine(MaxSumNo2Adjacent.Run(new int[]{-1,2, -3, 5, -10}));
-
-            // var ladders = new Dictionary<int,int>{
-            //     {8,77},
-            //     {37,94},
-            //     {58,82},
-            //     {36,100}
-            // };
-            // var snakes = new Dictionary<int, int>{
-            //     {99,12},
-            //     {87,57},
-            //     {72,30},
-            //     {90,43},
-            //     {53,2},
-            //     {78,35}
-            // };
-            // var snl = new SnakeNLadder();
-            // snl.Ladderdict = ladders;
-            // snl.Snakedict = snakes;
-
-            // System.Console.WriteLine(snl.QuickWayUp());
-
-            // var a = new int[3][];
-            // a[0] = new int[3]{ 0,1,0 };
-            // a[1] = new int[3]{ 0,0,0 };
-            // a[2] = new int[3]{ 0,0,1 };
-
-            // System.Console.WriteLine(ShortestBridge.Run(a));
-
-            // var a = new int[6][];
-            // a[0] = new int[4]{ 1,2,2,1 };
-            // a[1] = new int[3]{ 3,1,2 };
-            // a[2] = new int[3]{ 1,3,2 };
-            // a[3] = new int[2]{ 2,4 };
-            // a[4] = new int[3]{ 3,1,2 };
-            // a[5] = new int[4]{ 1,3,1,1 };
-
-            // System.Console.WriteLine(BrickWall.Run(a));
-
-            // System.Console.WriteLine(KnightProbability.Run(3,2,0,0));
-
-            // var a = new int[3][];
-            // a[0] = new int[]{0,0};
-            // a[1] = new int[]{94911151,94911150};
-            // a[2] = new int[]{94911152,94911151};
-
-            // a[0] = new int[]{1,1};
-            // a[1] = new int[]{2,2};
-            // a[2] = new int[]{3,3};
-
-            // System.Console.WriteLine(StraightLineMaxPoints.Run(a));
-
-            // var a = new int[5][];
-            // a[0] = new int[]{2,9,10};
-            // a[1] = new int[]{3,7,15};
-            // a[2] = new int[]{5,12,12};
-            // a[3] = new int[]{15,20,10};
-            // a[4] = new int[]{19,24,8};
-
-            // System.Console.WriteLine(GetSkyline.Run(a));
-
-            // System.Console.WriteLine(WildcardPattern.Comparison("baaabab", "b*b"));
-
-            // var text = "Today is an amazing day for cricket, sachin played important role and India won World cup to become 2nd time winner. Cricket is religion and Sachin is considered to be god of cricket in world.";
-            // var words = new List<string>{
-            //     "cricket", 
-            //     "sachin", 
-            //     "world", 
-            //     "winner"
-            // };
-            // System.Console.WriteLine(MinimumLengthWindowWords.MinWindowLength(text, words));
-
-            var h =new HashSet<int>{
-                1,2,3
-            };
-
-            var v = new HashSet<int>{
-                1,2
-            };
-
-            System.Console.WriteLine(Twilio.PrisonBreak(3, 2, h, v));
+            for (int i = 0; i < 8; i++)
+            {
+                System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
+            }
         }
 
         public static void Compress(string str)
