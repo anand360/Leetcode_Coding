@@ -266,18 +266,44 @@ namespace Coding
 
             // var a = TopBottomPathMatrix.Run(f);
 
-            var test = new int[8];
-            for (int i = 1; i <= 1000000; i++)
-            {
-                var num = RandIntFlipCoin.Run(0,7);
-                //System.Console.WriteLine(num);
-                test[num]++;
-            }
+            // var test = new int[8];
+            // for (int i = 1; i <= 1000000; i++)
+            // {
+            //     var num = RandIntFlipCoin.Run(0,7);
+            //     //System.Console.WriteLine(num);
+            //     test[num]++;
+            // }
 
-            for (int i = 0; i < 8; i++)
-            {
-                System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
-            }
+            // for (int i = 0; i < 8; i++)
+            // {
+            //     System.Console.WriteLine($"{test[i]} => {(1.0 * test[i]) / 10}");
+            // }
+
+            // var n = new Node(1);
+            // n.Next = new Node(2);
+            // n.Next.Next = new Node(3);
+            // n.Next.Next.Next = new Node(4);
+            // n.Next.Next.Next.Next = new Node(5);
+
+            // ReorderList.Run(n);
+
+            var game = new MileStones(1);
+            var m1 = new MileStones(1);
+            var m3 = new MileStones(3);
+            var m2 = new MileStones(2);
+            var m10 = new MileStones(10);
+            var m20 = new MileStones(20);
+
+            game.AddMileStone(m1);
+            game.AddMileStone(m3);
+
+            m1.AddMileStone(m2);
+            m1.AddMileStone(m10);
+
+            m3.AddMileStone(m20);
+
+            var res = new List<int>();
+            System.Console.WriteLine(MaxGamePoint.GetMaxPoints(game, res));
         }
 
         public static void Compress(string str)

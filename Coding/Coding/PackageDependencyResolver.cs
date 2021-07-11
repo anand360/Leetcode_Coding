@@ -1,4 +1,6 @@
 // https://www.electricmonk.nl/docs/dependency_resolving_algorithm/dependency_resolving_algorithm.html
+// https://www.byte-by-byte.com/buildorder/
+
 using System;
 using System.Collections.Generic;
 
