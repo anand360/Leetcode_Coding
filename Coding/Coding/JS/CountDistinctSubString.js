@@ -1,22 +1,22 @@
+// https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/discuss/1505263/Single-pass-O(n)-time-and-O(1)-space-solution-with-detailed-explanation
+
 let countDistinctSubString = function (input){
     let n = input.length;
 
     var ans = 0;
-    var cnt = Array(26).fill(0);
+    var cur = 0;
 
-    var i = 0, j = 0;
+    var last = Array(26).fill(-1);
+    var prev = Array(26).fill(-1);
 
-    while (i < n){
-        if(j < n && (cnt[input[j].charCodeAt(0) - 'a'.charCodeAt(0)] == 0)){
-            cnt[input[j].charCodeAt(0) - 'a'.charCodeAt(0)]++;
+    for (let i = 0; i < n; i++) {
+        let c = input[i];
+        
+        cur += (i - last[c.charCodeAt(0) - 'a'.charCodeAt(0)] - 1) - (last[c.charCodeAt(0) - 'a'.charCodeAt(0)] - prev[c.charCodeAt(0) - 'a'.charCodeAt(0)]) + 1;
+        prev[c.charCodeAt(0) - 'a'.charCodeAt(0)] = last[c.charCodeAt(0) - 'a'.charCodeAt(0)];
+        last[c.charCodeAt(0) - 'a'.charCodeAt(0)] = i;
 
-            ans += (j - i +1);
-            j++;
-        }
-        else{
-            cnt[input[i].charCodeAt(0) - 'a'.charCodeAt(0)]--;
-            i++;
-        }
+        ans += cur;
     }
 
     return ans;
