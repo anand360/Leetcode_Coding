@@ -1,3 +1,4 @@
+// https://leetcode.com/discuss/interview-question/892930/answer-a-query
 //queries = [[2, 3], [1, 2], [2, 1], [2, 3], [2, 2]]
 // output = [-1, 2, -1, 2]
 

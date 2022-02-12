@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/brick-wall/
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 public class BrickWall{
