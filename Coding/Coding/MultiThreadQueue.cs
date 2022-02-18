@@ -1,4 +1,6 @@
 // https://www.justsoftwaresolutions.co.uk/threading/implementing-a-thread-safe-queue-using-condition-variables.html
+// https://github.com/microsoft/referencesource/blob/5697c29004a34d80acdaf5742d7e699022c64ecd/mscorlib/system/collections/Concurrent/ConcurrentQueue.cs#L741
+// https://docs.microsoft.com/en-us/dotnet/standard/threading/how-to-use-spinlock-for-low-level-synchronization
 
 // template<typename Data>
 // class concurrent_queue
