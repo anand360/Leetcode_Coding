@@ -287,23 +287,32 @@ namespace Coding
 
             // ReorderList.Run(n);
 
-            var game = new MileStones(1);
-            var m1 = new MileStones(1);
-            var m3 = new MileStones(3);
-            var m2 = new MileStones(2);
-            var m10 = new MileStones(10);
-            var m20 = new MileStones(20);
+            // var game = new MileStones(1);
+            // var m1 = new MileStones(1);
+            // var m3 = new MileStones(3);
+            // var m2 = new MileStones(2);
+            // var m10 = new MileStones(10);
+            // var m20 = new MileStones(20);
 
-            game.AddMileStone(m1);
-            game.AddMileStone(m3);
+            // game.AddMileStone(m1);
+            // game.AddMileStone(m3);
 
-            m1.AddMileStone(m2);
-            m1.AddMileStone(m10);
+            // m1.AddMileStone(m2);
+            // m1.AddMileStone(m10);
 
-            m3.AddMileStone(m20);
+            // m3.AddMileStone(m20);
 
-            var res = new List<int>();
-            System.Console.WriteLine(MaxGamePoint.GetMaxPoints(game, res));
+            // var res = new List<int>();
+            // System.Console.WriteLine(MaxGamePoint.GetMaxPoints(game, res));
+
+            var hitCounter = new HitCounter(300);
+
+            hitCounter.Count('a', 500);
+            hitCounter.Count('a', 600);
+            hitCounter.Count('b', 700);
+
+            Console.WriteLine(hitCounter.GetCount('a', 700));
+            Console.WriteLine(hitCounter.GetTotalCount(700));
         }
 
         public static void Compress(string str)
