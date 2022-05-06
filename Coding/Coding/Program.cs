@@ -305,14 +305,16 @@ namespace Coding
             // var res = new List<int>();
             // System.Console.WriteLine(MaxGamePoint.GetMaxPoints(game, res));
 
-            var hitCounter = new HitCounter(300);
+            // var hitCounter = new HitCounter(300);
 
-            hitCounter.Count('a', 500);
-            hitCounter.Count('a', 600);
-            hitCounter.Count('b', 700);
+            // hitCounter.Count('a', 500);
+            // hitCounter.Count('a', 600);
+            // hitCounter.Count('b', 700);
 
-            Console.WriteLine(hitCounter.GetCount('a', 700));
-            Console.WriteLine(hitCounter.GetTotalCount(700));
+            // Console.WriteLine(hitCounter.GetCount('a', 700));
+            // Console.WriteLine(hitCounter.GetTotalCount(700));
+
+            Console.WriteLine(i18nPatternMatch.Run("Faccccccccebook", "F10eb2k"));
         }
 
         public static void Compress(string str)
