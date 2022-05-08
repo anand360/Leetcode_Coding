@@ -20,7 +20,7 @@ public class i18nPatternMatch
 
         while (i < input.Length && j < pattern.Length)
         {
-            while(Char.IsDigit(pattern[j]))
+            while(j < pattern.Length && Char.IsDigit(pattern[j]))
             {
                 curNum = (curNum * 10) + (pattern[j] - '0');
                 j++;
@@ -39,7 +39,7 @@ public class i18nPatternMatch
                 }
             }
 
-            while(curNum > 0 && i < input.Length)
+            while(curNum > 0)
             {
                 i++;
                 curNum--;

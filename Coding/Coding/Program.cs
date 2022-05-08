@@ -314,7 +314,7 @@ namespace Coding
             // Console.WriteLine(hitCounter.GetCount('a', 700));
             // Console.WriteLine(hitCounter.GetTotalCount(700));
 
-            Console.WriteLine(i18nPatternMatch.Run("Faccccccccebook", "F10eb2k"));
+            Console.WriteLine(i18nPatternMatch.Run("Facebooker", "3eb2k2"));
         }
 
         public static void Compress(string str)
