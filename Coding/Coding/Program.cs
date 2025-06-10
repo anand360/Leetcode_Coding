@@ -319,7 +319,6 @@ namespace Coding
 
         public static void Compress(string str)
         {
-            int size = 0;
             char last = str[0];
             int lastIndex = 0;
             int count = 1;
