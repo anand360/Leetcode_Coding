@@ -315,6 +315,7 @@ namespace Coding
             // Console.WriteLine(hitCounter.GetTotalCount(700));
 
             Console.WriteLine(i18nPatternMatch.Run("Facebooker", "3eb2k2"));
+            Console.ReadKey();
         }
 
         public static void Compress(string str)
